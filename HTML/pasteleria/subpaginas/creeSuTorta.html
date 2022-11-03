@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/HTML/pasteleria/images/LogoCuartaCrecienteBlancaSombreada.ico" />
+  <title>Cuarta Creciente</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      
+      <nav class="navigation"> 
+        <img class="logo" alt="LOGO" src="/HTML/pasteleria/images/LogoCuartaCrecienteNegra2.svg" srcset="/HTML/pasteleria/images/LogoCuartaCrecienteNegra2.svg 200w, /HTML/pasteleria/images/LogoCuartaCrecienteNegra.svg 400w" sizes="(min-width: 600px) 200px, 25vw">         
+          
+        <ul>
+          <li><a href="/HTML/pasteleria/log.html">LOGIN</a></li>
+          <li><a href="/HTML/pasteleria/homePasteleria.html">HOME</a></li>
+          <li><a href="/HTML/pasteleria/contactos.html">CONTACTOS</a></li>
+          <li><a href="/HTML/pasteleria/historiaMenuElija.html">MENÚ</a></li>
+          <li><a href="/HTML/pasteleria/galeria.html">GALERÍA</a></li>
+          <li><a href="/HTML/pasteleria/elija.html">ELIJA</a></li>
+          <li><a href="/HTML/pasteleria/nuestraHistoria.html">HISTORIA</a></li>
+          <li><a href="/HTML/pasteleria/blog.html">BLOG</a></li>
+          <li><a href="/HTML/pasteleria/orden.html">ORDEN</a></li>
+          <li><a href="/HTML/pasteleria/carrito.html">CARRITO</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="title">
+      <h1>Bizcocho</h1>
+    </div>
+    <div>
+      <form action="bizcochos">
+        <h2>Sabores</h2>
+        
+        <label for="vainilla">
+          <input type="checkbox" name="bizcochos" value="vainilla" id="vainilla">
+          Vainilla
+        </label>
+        <br>
+        <label for="frutilla">
+          <input type="checkbox" name="bizcochos" value="frutilla" id="frutilla">
+          Frutilla
+        </label>
+        <br>
+        <label for="chocolate">
+          <input type="checkbox" name="bizcochos" value="chocolate" id="chocolate" >
+          Chocolate
+        </label>
+        <br>
+        <label for="coco">
+          <input type="checkbox" name="bizcochos" value="coco" id="coco" >
+          Coco
+        </label>
+        <br>
+        <label for="naranja">
+          <input type="checkbox" name="bizcochos" value="naranja" id="naranja" >
+          Naranja
+        </label>
+        <br>
+        <label for="banana">
+          <input type="checkbox" name="bizcochos" value="banana" id="banana" >
+          Banana
+        </label>
+        <br>
+        <label for="zanahoria">
+          <input type="checkbox" name="bizcochos" value="zanahoria" id="zanahoria" disabled >
+          Zanahoria (Sin stock temporalmente)
+        </label>
+        <br>
+        <label for="limón">
+          <input type="checkbox" name="bizcochos" value="limón" id="limón" >
+          Limón
+        </label>
+        <br>
+        <hr>
+        
+      
+      </form>
+      <form action="">
+        <fieldset>
+          <legend>INFORMACIÓN</legend>
+          <div>
+            <label>Seleccione hasta un máximo de 3 sabores diferentes.</label>
+            <br>
+            <label for="comentario">Comentario</label>
+            <br>
+            <textarea name="comentario" id="comentario" cols="70" rows="10"  placeholder="Escriba un comentario u observación para detallar de mejor manera su pedido con este apartado. Máximo 150 caracteres." maxlength="150"></textarea>
+          </div>
+        </fieldset>
+      </form>
+      <br>
+      <a href="/HTML/pasteleria/subpaginas/creeSuTorta1.html"><input type="button" value="Confirmar"></a> <span>eh ir a RELLENO</span>
+
+    </div>
+
+
+
+    <a href="/HTML/pasteleria/subpaginas/menuEligeSabor.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAYVJREFUaEPtmeFNxDAMRt9NABsAGxwTwAawAbDBMQlsAGwAEyAmgA3gJgAmAFlq/lRpKqdnu4VEOqk65ZLv+fOlrb1i4WO1cP00gGgHmwNzd+AQuAHWgFx7jg/gDbgG5Do7Sikkgl+BfU/Vmb2+gOMhiBLAI3AWLD5t/wSc57SUAD5nEP2kWVLoSAvwM5PoJxnZYJccaAA9B1+AkwmuhjrwAFx2n7tKiDCAJD7pFpAaiBCAvvgE8QycKp1wBxgSL9EXF7TDFWDX4gXWDcBCvBuAlXgXAEvx5gDW4k0BPMSbAXiJNwO4B64yB7p8f6E96Efmmx2jXhBmABI4DwhTAA8IcwBrCBcASwg3ACsIVwALCHeAEsR7RaUvBCAHsYgXmv5NNd0nasWbPUponhakujalQByWQhrI0tz/ByBl7b1dhW/iOtuh9PvT5XX5w0mHJNqF765DlO3SjDX5BOK2W+BgYhpofy5pIwHc1LaYtBuGzB9zIESUZtMGoImWxdzmgEVUNWv+ApiWYDEPOBBwAAAAAElFTkSuQmCC" alt="Ir atrás"/></a>
+
+  </main>
+    <hr>
+    <a href="/HTML/pasteleria/terminosYCondiciones.html" target="_blank" class="enlace-terminos">Términos y Condiciones</a>
+    <a href="#"><p>&#11192; arriba</p></a>
+    <hr>
+  <footer>
+    &#169; Copyright 2022 David A. Beltrán R. de C.  //  Hosted by GITHUB  //  Powered by AMHEDRIEL  //  30 - 08 - 2022
+  </footer>
+  <br>
+</body>
+</html>

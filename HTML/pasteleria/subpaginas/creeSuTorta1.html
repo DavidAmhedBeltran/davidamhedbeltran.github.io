@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/HTML/pasteleria/images/LogoCuartaCrecienteBlancaSombreada.ico" />
+  <title>Cuarta Creciente</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      
+      <nav class="navigation"> 
+        <img class="logo" alt="LOGO" src="/HTML/pasteleria/images/LogoCuartaCrecienteNegra2.svg" srcset="/HTML/pasteleria/images/LogoCuartaCrecienteNegra2.svg 200w, /HTML/pasteleria/images/LogoCuartaCrecienteNegra.svg 400w" sizes="(min-width: 600px) 200px, 25vw">         
+          
+        <ul>
+          <li><a href="/HTML/pasteleria/log.html">LOGIN</a></li>
+          <li><a href="/HTML/pasteleria/homePasteleria.html">HOME</a></li>
+          <li><a href="/HTML/pasteleria/contactos.html">CONTACTOS</a></li>
+          <li><a href="/HTML/pasteleria/historiaMenuElija.html">MENÚ</a></li>
+          <li><a href="/HTML/pasteleria/galeria.html">GALERÍA</a></li>
+          <li><a href="/HTML/pasteleria/elija.html">ELIJA</a></li>
+          <li><a href="/HTML/pasteleria/nuestraHistoria.html">HISTORIA</a></li>
+          <li><a href="/HTML/pasteleria/blog.html">BLOG</a></li>
+          <li><a href="/HTML/pasteleria/orden.html">ORDEN</a></li>
+          <li><a href="/HTML/pasteleria/carrito.html">CARRITO</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div>
+  <main>
+    <div class="title">
+      <h1>RELLENO</h1>
+    </div>
+    <div>
+      <form action="relleno">
+        <h2>Sabores</h2>
+        
+        <label for="leche-condensada">
+          <input type="checkbox" name="relleno" value="leche-condensada" id="leche-condensada">
+          Leche Condensada
+          
+        </label>
+        <br>
+        <label for="fruta">
+          <input type="checkbox" name="relleno" value="fruta" id="fruta">
+          Fruta: *
+          <label for="frutas">Seleccione una fruta:</label>
+          <select name="frutas">
+            <option value="ananá">Ananá</option>
+            <option value="frutilla">Frutilla</option>
+            <option value="kiwi">Kiwi</option>
+            <option value="cerezas">Cerezas</option>
+            <option value="duraznos">Duraznos</option>
+            <option value="peras">Peras</option>
+          </select>
+        </label>
+        <br>
+        <label for="Crema-de-Chocolate">
+          <input type="checkbox" name="relleno" value="chocolate" id="chocolate" >
+          Crema de Chocolate
+        </label>
+        <br>
+        <label for="crema-pastelera">
+          <input type="checkbox" name="relleno" value="crema-pastelera" id="crema-pastelera" >
+          Crema Pastelera
+        </label>
+        <br>
+        <label for="duraznos-en-álmibar">
+          <input type="checkbox" name="relleno" value="duraznos-en-álmibar" id="duraznos-en-álmibar" >
+          Duraznos en Álmibar
+        </label>
+        <br>
+        <label for="dulce-de-leche">
+          <input type="checkbox" name="relleno" value="dulce-de-leche" id="dulce-de-leche" >
+          Dulce de Leche
+        </label>
+        <br>
+        <label for="galletas-trituradas">
+          <input type="checkbox" name="relleno" value="galletas-trituradas" id="galletas-trituradas">
+          Galletas Trituradas *
+          <label for="galletas">Seleccione:</label>
+          <select name="galletas">
+            <option value="ananá">Ananá</option>
+            <option value="frutilla">Frutilla</option>
+            <option value="kiwi">Kiwi</option>
+            <option value="cerezas">Cerezas</option>
+            <option value="duraznos">Duraznos</option>
+            <option value="peras">Peras</option>
+          </select>
+        </label>
+        <br>
+        <label for="mermelada-de">
+          <input type="checkbox" name="relleno" value="mermelada-de" id="mermelada-de" >
+          Mermelada de *
+          <label for="mermelada">Seleccione una:</label>
+          <select name="mermelada">
+            <option value="higo">Higo</option>
+            <option value="frutilla">Frutilla</option>
+            <option value="naranja">Naranja</option>
+            <option value="cerezas">Cerezas</option>
+            <option value="duraznos">Duraznos</option>
+            <option value="membrillo">Membrillo</option>
+          </select>
+        </label>
+        <br>
+        <hr>
+        
+      
+      </form>
+      <form action="">
+        <fieldset>
+          <legend>INFORMACIÓN</legend>
+          <div>
+            <label>Seleccione hasta un máximo de 2 sabores diferentes por capa.</label>
+            <br>
+            <label for="comentario">Comentario</label>
+            <br>
+            <textarea name="comentario" id="comentario" cols="70" rows="10"  placeholder="Escriba un comentario u observación para detallar de mejor manera su pedido con este apartado. Máximo 150 caracteres." maxlength="150"></textarea>
+          </div>
+        </fieldset>
+      </form>
+      <br>
+      <a href="/HTML/pasteleria/subpaginas/creeSuTorta2.html"><input type="button" value="Confirmar"></a> <span>eh ir a la COBERTURA</span>
+
+    </div>
+
+    <a href="/HTML/pasteleria/subpaginas/creeSuTorta.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAYVJREFUaEPtmeFNxDAMRt9NABsAGxwTwAawAbDBMQlsAGwAEyAmgA3gJgAmAFlq/lRpKqdnu4VEOqk65ZLv+fOlrb1i4WO1cP00gGgHmwNzd+AQuAHWgFx7jg/gDbgG5Do7Sikkgl+BfU/Vmb2+gOMhiBLAI3AWLD5t/wSc57SUAD5nEP2kWVLoSAvwM5PoJxnZYJccaAA9B1+AkwmuhjrwAFx2n7tKiDCAJD7pFpAaiBCAvvgE8QycKp1wBxgSL9EXF7TDFWDX4gXWDcBCvBuAlXgXAEvx5gDW4k0BPMSbAXiJNwO4B64yB7p8f6E96Efmmx2jXhBmABI4DwhTAA8IcwBrCBcASwg3ACsIVwALCHeAEsR7RaUvBCAHsYgXmv5NNd0nasWbPUponhakujalQByWQhrI0tz/ByBl7b1dhW/iOtuh9PvT5XX5w0mHJNqF765DlO3SjDX5BOK2W+BgYhpofy5pIwHc1LaYtBuGzB9zIESUZtMGoImWxdzmgEVUNWv+ApiWYDEPOBBwAAAAAElFTkSuQmCC" alt="Ir atrás"/></a> 
+  </main>
+    <hr>
+    <a href="/HTML/pasteleria/terminosYCondiciones.html" target="_blank" class="enlace-terminos">Términos y Condiciones</a>
+    <a href="#"><p>&#11192; arriba</p></a>
+    <hr>
+  <footer>
+    &#169; Copyright 2022 David A. Beltrán R. de C.  //  Hosted by GITHUB  //  Powered by AMHEDRIEL  //  30 - 08 - 2022
+  </footer>
+  <br>
+</body>
+</html>
