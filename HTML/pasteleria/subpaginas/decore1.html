@@ -36,7 +36,7 @@
     </div>
     <br>
     <label for="galletas-trituradas">
-      <input type="checkbox" name="cobertura" value="galletas-trituradas" id="galletas-trituradas">
+      <input type="checkbox" name="borde" value="galletas-trituradas" id="galletas-trituradas">
       Galletas Trituradas *
       <label for="galletas">Seleccione:</label>
       <select name="galletas">
@@ -49,8 +49,22 @@
       </select>
     </label>
     <br>
+    <label for="galletas">
+      <input type="checkbox" name="borde" value="galletas" id="galletas" >
+      Galletas *
+    </label>
+    <label for="galletas">Seleccione:</label>
+    <select name="galletas">
+      <option value="vainilla">Vainilla</option>
+      <option value="oreo">Oreo</option>
+      <option value="con-chips">Con Chips</option>
+      <option value="recital">Recital</option>
+      <option value="coco">Coco</option>
+      <option value="jengibre">Jengibre</option>
+    </select>
+    <br>
     <label for="fruta">
-      <input type="checkbox" name="cobertura" value="fruta" id="fruta">
+      <input type="checkbox" name="borde" value="fruta" id="fruta">
       Fruta: *
       <label for="frutas">Seleccione una fruta:</label>
       <select name="frutas">
@@ -64,8 +78,8 @@
     </label>
     <br>
     <label for="crema">
-      <input type="checkbox" name="cobertura" value="crema" id="crema">
-      Crema *
+      <input type="checkbox" name="borde" value="crema" id="crema">
+      Rosas de Crema *
       <label for="crema">Seleccione Color:</label>
       <select name="crema">
         <option value="amarillo">Amarillo</option>
@@ -80,30 +94,30 @@
     </label>
     <br>
     <label for="Crema-de-Chocolate">
-      <input type="checkbox" name="cobertura" value="chocolate" id="chocolate" >
+      <input type="checkbox" name="borde" value="galletas" id="galletas" >
       Crema de Chocolate
     </label>
     <br>
     <label for="crema-pastelera">
-      <input type="checkbox" name="cobertura" value="crema-pastelera" id="crema-pastelera" >
+      <input type="checkbox" name="borde" value="crema-pastelera" id="crema-pastelera" >
       Crema Pastelera
     </label>
     <br>
-    <label for="chocolate-fundido">
-      <input type="checkbox" name="cobertura" value="chocolate-fundido" id="chocolate-fundido" >
-      Chocolate Fundido
+    <label for="rosas de chocolate">
+      <input type="checkbox" name="borde" value="rosas de chocolate" id="rosas de chocolate" >
+      Rosas de Chocolate
     </label>
     <br>
     <label for="coco-rallado">
-      <input type="checkbox" name="cobertura" value="coco-rallado" id="coco-rallado" >
+      <input type="checkbox" name="borde" value="coco-rallado" id="coco-rallado" >
       Coco Rallado
     </label>
     <br>
-    <label for="fondant">
-      <input type="checkbox" name="cobertura" value="fondant" id="fondant">
-      Fondant *
-      <label for="fondant">Seleccione el Color:</label>
-      <select name="fondant">
+    <label for="rosas-de-fondant">
+      <input type="checkbox" name="borde" value="rosas-de-fondant" id="rosas-de-fondant">
+      Rosas de Fondant *
+      <label for="rosas-de-fondant">Seleccione el Color:</label>
+      <select name="rosas-de-fondant">
         <option value="amarillo">Amarillo</option>
         <option value="rojo">Rojo</option>
         <option value="marron">Marórn</option>
@@ -115,9 +129,45 @@
       </select>
     </label>
     <br>
-    <label for="cacao-en-polvo">
-      <input type="checkbox" name="cobertura" value="cacao-en-polvo" id="cacao-en-polvo" >
-      Cacao en Polvo
+    <label for="flores">
+      <input type="checkbox" name="borde" value="flores" id="flores">
+      Flores Plásticas *
+      <label for="flores">Tipo:</label>
+      <select name="flores">
+        <option value="amapolas">Amapolas</option>
+        <option value="rosas">Rosas</option>
+        <option value="margaritas">Margaritas</option>
+        <option value="violetas">Violetas</option>
+        <option value="narcisos">Narcisos</option>
+        <option value="tulipanes">Tulipanes</option>
+      </select>
+      <label for="flores">Color:</label>
+      <select name="flores">
+        <option value="amarillo">Amarillo</option>
+        <option value="rojo">Rojo</option>
+        <option value="marron">Marórn</option>
+        <option value="rosado">Rosado</option>
+        <option value="verde">Verde</option>
+        <option value="naranja">Naranja</option>
+        <option value="negro">Negro</option>
+        <option value="azul">Azul</option>
+      </select>
+    </label>
+    <br>
+    <label for="cintas">
+      <input type="checkbox" name="borde" value="cintas" id="cintas">
+      Cintas *
+      <label for="cintas">Seleccione el Color:</label>
+      <select name="cintas">
+        <option value="amarillo">Amarillo</option>
+        <option value="rojo">Rojo</option>
+        <option value="marron">Marórn</option>
+        <option value="rosado">Rosado</option>
+        <option value="verde">Verde</option>
+        <option value="naranja">Naranja</option>
+        <option value="negro">Negro</option>
+        <option value="azul">Azul</option>
+      </select>
     </label>
     <br>
     <hr>  
@@ -126,7 +176,7 @@
       <fieldset>
         <legend>INFORMACIÓN</legend>
         <div>
-        <label>Seleccione hasta un máximo de 3 coberturas diferentes.</label>
+        <label>Seleccione hasta un máximo de 3 adornos diferentes.</label>
         <br>
         <label for="comentario">Comentario</label>
         <br>
@@ -135,10 +185,10 @@
       </fieldset>
     </form>
     <br>
-    <a href="/HTML/pasteleria/subpaginas/creeSuTorta3resumen.html"><input type="button" value="Confirmar"></a> <span>eh ir al RESUMEN</span>
+    <a href="/HTML/pasteleria/subpaginas/decore2.html"><input type="button" value="Confirmar"></a> <span>eh ir a BASE</span>
     </div>
     <br>
-    <a href="/HTML/pasteleria/elija.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAYVJREFUaEPtmeFNxDAMRt9NABsAGxwTwAawAbDBMQlsAGwAEyAmgA3gJgAmAFlq/lRpKqdnu4VEOqk65ZLv+fOlrb1i4WO1cP00gGgHmwNzd+AQuAHWgFx7jg/gDbgG5Do7Sikkgl+BfU/Vmb2+gOMhiBLAI3AWLD5t/wSc57SUAD5nEP2kWVLoSAvwM5PoJxnZYJccaAA9B1+AkwmuhjrwAFx2n7tKiDCAJD7pFpAaiBCAvvgE8QycKp1wBxgSL9EXF7TDFWDX4gXWDcBCvBuAlXgXAEvx5gDW4k0BPMSbAXiJNwO4B64yB7p8f6E96Efmmx2jXhBmABI4DwhTAA8IcwBrCBcASwg3ACsIVwALCHeAEsR7RaUvBCAHsYgXmv5NNd0nasWbPUponhakujalQByWQhrI0tz/ByBl7b1dhW/iOtuh9PvT5XX5w0mHJNqF765DlO3SjDX5BOK2W+BgYhpofy5pIwHc1LaYtBuGzB9zIESUZtMGoImWxdzmgEVUNWv+ApiWYDEPOBBwAAAAAElFTkSuQmCC" alt="Ir atrás"/></a>
+    <a href="/HTML/pasteleria/subpaginas/decore.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAYVJREFUaEPtmeFNxDAMRt9NABsAGxwTwAawAbDBMQlsAGwAEyAmgA3gJgAmAFlq/lRpKqdnu4VEOqk65ZLv+fOlrb1i4WO1cP00gGgHmwNzd+AQuAHWgFx7jg/gDbgG5Do7Sikkgl+BfU/Vmb2+gOMhiBLAI3AWLD5t/wSc57SUAD5nEP2kWVLoSAvwM5PoJxnZYJccaAA9B1+AkwmuhjrwAFx2n7tKiDCAJD7pFpAaiBCAvvgE8QycKp1wBxgSL9EXF7TDFWDX4gXWDcBCvBuAlXgXAEvx5gDW4k0BPMSbAXiJNwO4B64yB7p8f6E96Efmmx2jXhBmABI4DwhTAA8IcwBrCBcASwg3ACsIVwALCHeAEsR7RaUvBCAHsYgXmv5NNd0nasWbPUponhakujalQByWQhrI0tz/ByBl7b1dhW/iOtuh9PvT5XX5w0mHJNqF765DlO3SjDX5BOK2W+BgYhpofy5pIwHc1LaYtBuGzB9zIESUZtMGoImWxdzmgEVUNWv+ApiWYDEPOBBwAAAAAElFTkSuQmCC" alt="Ir atrás"/></a>
 
   </main>
     <hr>
