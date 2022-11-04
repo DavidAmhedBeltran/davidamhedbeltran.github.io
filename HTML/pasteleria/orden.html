@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/HTML/pasteleria/images/LogoCuartaCrecienteBlancaSombreada.ico" />
   <title>Cuarta Creciente</title>
 </head>
 <body>
   <header class="header">
     <div class="container">
+      
       <nav class="navigation"> 
         <img class="logo" alt="LOGO" src="/HTML/pasteleria/images/LogoCuartaCrecienteNegra2.svg" srcset="/HTML/pasteleria/images/LogoCuartaCrecienteNegra2.svg 200w, /HTML/pasteleria/images/LogoCuartaCrecienteNegra.svg 400w" sizes="(min-width: 600px) 200px, 25vw">         
+          
         <ul>
           <li><a href="/HTML/pasteleria/log.html">LOGIN</a></li>
           <li><a href="/HTML/pasteleria/homePasteleria.html">HOME</a></li>
@@ -25,11 +28,108 @@
         </ul>
       </nav>
     </div>
-      <a href="#" class="login"></a>
   </header>
+
   <main>
+    <div class="title">
+      <h1>RESUMEN DE TORTA</h1>
+    </div>
+    <div>
+      <form action="">
+        <fieldset>
+          <legend>BIZCOCHO</legend>
+          <div>
+            <br>
+            <label for="frutilla">
+              <input type="checkbox" name="bizcocho" value="frutilla" id="frutilla" checked>
+              Frutilla
+            </label>
+            <br>
+            <label for="chocolate">
+              <input type="checkbox" name="bizcocho" value="chocolate" id="chocolate" checked>
+              Chocolate
+            </label>
+            <br>
+            <label for="comentario">Comentario</label>
+            <br>
+            <textarea name="comentario" id="comentario" cols="70" rows="10"  placeholder="2 capas de bicochuelo de frutilla y 1 de chocolate al medio." maxlength="200"></textarea>
+          </div>
+        </fieldset>
+      </form>
+      <br>
+      <form action="">
+        <fieldset>
+          <legend>RELLENO</legend>
+          <div>
+            <br>
+            <label for="fruta">
+              <input type="checkbox" name="cobertura" value="fruta" id="fruta" checked>
+              Fruta: *
+              <label for="frutas">Seleccione una fruta:</label>
+              <select name="frutas">
+                <option value="ananá">Ananá</option>
+              </select>
+            </label>
+            <br>
+            <label for="Crema-de-Chocolate">
+              <input type="checkbox" name="relleno" value="chocolate" id="chocolate" checked>
+              Crema de Chocolate
+            </label>
+            <br>
+            <label for="comentario">Comentario</label>
+            <br>
+            <textarea name="comentario" id="comentario" cols="70" rows="10"  placeholder="El mismo entre las capas." maxlength="200"></textarea>
+          </div>
+        </fieldset>
+      </form>
+      <br>
+      <form action="">
+        <fieldset>
+          <legend>COBERTURA</legend>
+          <div>
+            <br>
+            <label for="fruta">
+              <input type="checkbox" name="cobertura" value="fruta" id="fruta" checked>
+              Fruta: *
+              <label for="frutas">Seleccione una fruta:</label>
+              <select name="frutas">
+                <option value="frutilla">Frutilla</option>
+              </select>
+            </label>
+            <br>
+            <label for="crema">
+              <input type="checkbox" name="cobertura" value="crema" id="crema" checked>
+              Crema *
+              <label for="crema">Seleccione Color:</label>
+              <select name="crema">
+                <option value="rojo">Rojo</option>
+              </select>
+            </label>
+            <br>
+            <label for="fondant">
+              <input type="checkbox" name="cobertura" value="fondant" id="fondant" checked>
+              Fondant *
+              <label for="fondant">Seleccione el Color:</label>
+              <select name="fondant">
+                <option value="rojo">Rojo</option>
+              </select>
+            </label>
+            <br>
+            <label for="comentario">Comentario</label>
+            <br>
+            <textarea name="comentario" id="comentario" cols="70" rows="10"  placeholder="Torta cubierta de fondant rojo, crema roja arriba solamente, frutillas en rodajas pegadas en toda la torta" maxlength="200"></textarea>
+          </div>
+        </fieldset>
+      </form>
+      <br>
+      <a href="/HTML/pasteleria/subpaginas/decore5resumen.html"><input type="button" value="Siguiente"></a>
+    </div>
+        <br>
+    <a href="/HTML/pasteleria/homePasteleria.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAYVJREFUaEPtmeFNxDAMRt9NABsAGxwTwAawAbDBMQlsAGwAEyAmgA3gJgAmAFlq/lRpKqdnu4VEOqk65ZLv+fOlrb1i4WO1cP00gGgHmwNzd+AQuAHWgFx7jg/gDbgG5Do7Sikkgl+BfU/Vmb2+gOMhiBLAI3AWLD5t/wSc57SUAD5nEP2kWVLoSAvwM5PoJxnZYJccaAA9B1+AkwmuhjrwAFx2n7tKiDCAJD7pFpAaiBCAvvgE8QycKp1wBxgSL9EXF7TDFWDX4gXWDcBCvBuAlXgXAEvx5gDW4k0BPMSbAXiJNwO4B64yB7p8f6E96Efmmx2jXhBmABI4DwhTAA8IcwBrCBcASwg3ACsIVwALCHeAEsR7RaUvBCAHsYgXmv5NNd0nasWbPUponhakujalQByWQhrI0tz/ByBl7b1dhW/iOtuh9PvT5XX5w0mHJNqF765DlO3SjDX5BOK2W+BgYhpofy5pIwHc1LaYtBuGzB9zIESUZtMGoImWxdzmgEVUNWv+ApiWYDEPOBBwAAAAAElFTkSuQmCC" alt="Ir atrás"/></a>
 
   </main>
+    <hr>
+    <a href="/HTML/pasteleria/terminosYCondiciones.html" target="_blank" class="enlace-terminos">Términos y Condiciones</a>
     <a href="#"><p>&#11192; arriba</p></a>
     <hr>
   <footer>
