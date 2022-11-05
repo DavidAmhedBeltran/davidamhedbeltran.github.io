@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/HTML/pasteleria/images/LogoCuartaCrecienteBlancaSombreada.ico" />
+
+  <title>Cuarta Creciente</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navigation"> 
+        <img class="logo" alt="LOGO" src="/HTML/pasteleria/images/LogoCuartaCrecienteNegra2.svg" srcset="/HTML/pasteleria/images/LogoCuartaCrecienteNegra2.svg 200w, /HTML/pasteleria/images/LogoCuartaCrecienteNegra.svg 400w" sizes="(min-width: 600px) 200px, 25vw">         
+        <ul>
+          <li><a href="/HTML/pasteleria/log.html">LOGIN</li>
+          <li><a href="/HTML/pasteleria/contactos.html">CONTACTOS</a></li>
+          <li><a href="/HTML/pasteleria/historiaMenuElija.html">MENÚ</a></li>
+          <li><a href="/HTML/pasteleria/elija.html">ELIJA</a></li>
+          <li><a href="/HTML/pasteleria/orden.html">ORDEN</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+  
+  <main class="main">
+    <div class="container">
+      <h1>BUENOS DÍAS</h1>
+    </div>
+    <div>
+      <form>
+        <label>Email *</label>
+        <input type="email" placeholder="Ingrese su mail" autofocus required>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAUxJREFUWEftl+1twjAURU8moN2gm9AN6AjtBnQC6ASwQcsGjACbdAQ6AdVFMbJM/BUnKEj2r0h5ee/6vGvHbpjYaCamhyoo1pFKKJfQE7AB3gA9jz1+gE/gZAq5LdsDi7FVOPl3wLtP0PnOYlROdJ5TBB2B+UgC3dzXTrktswnp3RJYA7OBhP21+baAW+tSIiZIMS+AzFdKS1Tkld92cr0FGTh9adlUbNDZgoT1y16SPWi5VCRI28mqtcONl0MtU7DwfgAHx0MxWj4qr8B3OzE7ZZKp7Q9yaKVSKRKUQksxWpESbw8flWJBJoGPlhFt4rq84ts9slvmJvJ5y8SlUBmMUMhbOVRGEWR7S89dKyhlky9uWUqRnJgqKEarEqqEYgRC7/Ujvl4oJn/Il1KdDrX1D3VsDdHRjUNHGe81qAT9IN/Wq3QMYyX0cIT+AXG4USV3WLepAAAAAElFTkSuQmCC" alt="mail">
+        
+      </form>
+    </div>
+    <div>
+<br>
+    </div>
+    <div>
+      <form>
+        <label>Password *</label>
+        <input type="password" placeholder="Ingrese su clave" required>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAZlJREFUWEftl4EtBUEQhr9XAR2gAlSACtDB6wAVoAJ0oANUQAe8DuiACsifzCYbdmdv7255uEkuL5fbm/nu35mdeTOWzGZLxsOfAloHjoBdYMuUfgIegCvguY/6fRU6Bi4KAbVGYFXWB+jSlOkSSEAC62y1QAfATeR9AZwB2iqZtk73m9GaQ+C2K1EtkPJizZzfAQJMmQD27YHe2WgBpK9/NMdvgJL6NRNo1ZJ6xZ5vRyq6bDUKxYnsqRMCqtp27OYEUO4VrQZIuXFqHs8tV7wAOg50yQSnq2gtgYrBUwt+HZASV3mg315b8EkFVZzyL1cMbi9TVd0DqpgxTTB7uarztkyHXXzAjQmVrVIP6D0iUFWNYaFK5SsZuytQTfJ74PFHTkAppf6nQupRobNfA14BNFcoNax5fa45kA65MGKEnPHmnx8B0qyUO92bA6W2zJujmwNpm+JxtTS4fQtQzeA2AZVG20EKpUp6jI4vHy829H3x53XxODfGAgl+skqWxgpBzaM/h0PBpIzai/wmrQQ0FKD6/QmoJNkHO4lhJXNBuEkAAAAASUVORK5CYII=" alt="lock">
+      </form>
+    </div>
+    <br>
+    <form action="">
+      <fieldset>
+        <legend>INGREDIENTES DE MENSAJE EN LA TORTA</legend>
+        <div>
+          <br>
+          <label for="crema">
+            <input type="checkbox" name="mensajes" value="crema" id="crema" checked>
+            Crema *
+            <label for="crema">Seleccione Color:</label>
+            <select name="crema">
+              <option value="rosado">Rosado</option>
+            </select>
+          </label>
+          <br>
+          <label for="comentario">Comentario</label>
+          <br>
+          <textarea name="comentario" id="comentario" cols="70" rows="10"  placeholder="Mensaje: Felíz Cumpleaños Querubina" maxlength="200"></textarea>
+        </div>
+      </fieldset>
+    </form>
+    <br>
+    
+    <br>
+    <div>
+      <a href="/HTML/pasteleria/pastelero/ordendecompra.html"><button>Ingresar</button></a>
+    </div>
+    <br>
+    <hr>
+    <a href="/HTML/pasteleria/datos/recuperacion.html">Olvidaste tu contraseña?</a>
+    <br>
+    <br>
+
+  </main>
+  <br>
+    <a href="/HTML/pasteleria/terminosYCondiciones.html" target="_blank" class="enlace-terminos">Términos y Condiciones</a>
+    <a href="#"><p>&#11192; arriba</p></a>
+    <hr>
+  <footer>
+    &#169; Copyright 2022 David A. Beltrán R. de C.  //  Hosted by GITHUB  //  Powered by AMHEDRIEL  //  30 - 08 - 2022
+  </footer>
+  <br>
+</body>
+
+</html>
