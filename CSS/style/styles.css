@@ -504,6 +504,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   top: -900px;
+  width: 900px;
 }
 
 .contact-box {
