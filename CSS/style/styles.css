@@ -261,14 +261,21 @@ nav {
   background-color: #2848c6;
   margin: 2.5rem 4rem;
   border-radius: 5px;
+  cursor: pointer;
 
 }
-  .submit1{
+
+.submit:hover{
+  box-shadow: 5px 5px 30px rgb(155, 160, 224),
+              -5px -5px 30px #ffffff;
+}
+
+.submit-1{
     text-align: center;
     font-size: 1.5rem;
     color: #ffff;
     text-decoration-line: none;
-  }
+}
 
 /*3ra sección*/
 /*Vaccines*/
@@ -394,7 +401,6 @@ nav {
 }
 
 /*list box*/
-/**/
 
 .list-box {
   position: relative;
@@ -404,6 +410,7 @@ nav {
   top: -1020px;
   margin-left: 55rem ;
 }
+
 
 .list-box1 {
   display: flex;
@@ -430,7 +437,7 @@ nav {
   background: #fff;
   box-shadow: 15px 15px 50px rgba(204,229,255,1),
               -15px -15px 30px #fff;
-  
+
 }
 
 .estres{
@@ -459,6 +466,11 @@ nav {
   padding-left: 1.5rem;
 }
 
+.list-box1:hover {
+  background: #fff;
+  box-shadow: 15px 15px 50px rgba(204,229,255,1),
+              -15px -15px 30px #ffffff;
+}
 
 /*Section 5*/
 /**/
