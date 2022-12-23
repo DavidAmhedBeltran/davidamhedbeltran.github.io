@@ -6,29 +6,125 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pokedex LaunchX</title>
 	<link rel="stylesheet" href="./style/styles-dist.css">
-	
+
 </head>
 <body>
 	<h1>Pokedex LaunchX</h1>
+	<!-- Carcasa -->
+	<div class="tapa"></div>
+	<div class="tapa-2"></div>
+	<div class="curveado"></div>
+	<div class="curveado-1"></div>
+	<div class="curveado-2"></div>
+	<div class="curveado-rojo">
+		<div class="white"></div>
+		<div class="led-azul"></div>
+		<div class="led-rojo"></div>
+		<div class="led-amarillo"></div>
+		<div class="led-amarillo-2"></div>
+		<div class="tapa-1"></div>
+		
+	</div>
+	<div class="curveado-rojotinto"></div>
+
 	<div class="pokedex">
+		<!-- Pantalla -->
 		<div class="pokeDisplay">
+			<div class="speaker"></div>
+			<div class="button-red-1">
+			</div>
+			<div class="button-red-2">
+			</div>
+			<div class="button-red-3">
+			</div>
+			
 			<div class="pokePhoto">
 				<img src="./img/PokeballAmhedriel.svg" alt="Pokemon" id="pokeImg" class="image">
 			</div>
+
+			<div class="names">
+			</div>
 		</div>
+		<div class="container-pads">
+			<div class="black-button"></div>
+			<div class="red-button"></div>
+			<div class="blue-button"></div>
+			<div class="cross-pad">
+				<span class="pad-1"></span>
+				<span class="cross-span"></span>
+					<span class="pad-2"></span>
+			</div>
+			<div class="green-screen">
+				<div>Nombre:</div>
+				<span id="name"> pokemon</span>
+			</div>
+		</div>
+		<!-- Información -->
 		<div class="pokeInfo">
-			<div class="pokeScreen" id="abilities"><span>Habilidades</span></div>
-			<input type="text" class="placeholder" placeholder="Nombre o Nº de Pokemon" id="pokeName" name="pokeName" autofocus>
-			<button onclick="fetchPokemon()" tabindex="abilities">Buscar Pokemon</button>
+
+			<div class="pokeScreen" id="tipo">
+				<span>Tipo:</span>
+				<span class="tipo-1" id="types"></span>
+				<span class="tipo-2" id="types"></span>
+			</div>
+			<div class="pokeScreen" id="debilidades">
+				<span>Debilidades</span>
+				<span class="stats" id="stats"></span>
+			</div>
+			<div class="pokeScreen" id="tecnicas">
+				<span>Técnicas:</span>
+				<span class="types"  id="abilities"></span>
+			</div>
+
+			
+			<div class="buttons-blue">
+				<div class="button-blue-1"></div>
+				<div class="button-blue-2"></div>
+				<div class="button-blue-3"></div>
+				<div class="button-blue-4"></div>
+				<div class="button-blue-5"></div>
+				<div class="button-blue-6"></div>
+				<div class="button-blue-7"></div>
+				<div class="button-blue-8"></div>
+				<div class="button-blue-9"></div>
+				<div class="button-blue-10"></div>
+			</div>
+			<div class="buttons-black">
+				<div class="button-black-1"></div>
+				<div class="button-black-2"></div>
+			</div>
+
+			<div class="buttons-white">
+				<div class="button-white-1"></div>
+				<div class="button-white-2"></div>
+			</div>
+			<div class="led-yellow"></div>
+
+			<!-- Pantallas de datos -->
+			<div class="data" id="data">
+				<div class="height" id="mide">Mide</div>
+				<div class="weight" id="pesa">Pesa</div>
+				<input type="text" class="placeholder" placeholder="Pokemon Nombre/Nº" id="pokeName" name="pokeName" autofocus>
+				<button class ="buscar" id="pokeBuscar" onclick="fetchPokemon()" tabindex="abilities">Buscar Pokemon</button>
+			</div>
+				
+
 		</div>
-		<!-- <div class="pokeInfo">
-			<input type="text" class="placeholder" placeholder="Nombre o Nº de Pokemon" id="pokeName" name="pokeName" autofocus>
-			<button onclick="fetchPokemon()" tabindex="abilities">Buscar Pokemon</button>
-			<div class="pokeScreen" id="abilities"><span>Habilidades</span></div>
-		</div> -->
+		<div class="recuadro-1"></div>
+		<div class="recuadro-2"></div>
+	</div>
+	<div class="visagras">
+		<div class="visagra-1 visagra"></div>
+		<div class="visagra-2 visagra"></div>
+		<div class="visagra-3"></div>
+		<div class="visagra-4"></div>
+		<div class="visagra-5"></div>
+		<div class="visagra-6 visagra"></div>
+		<div class="visagra-7 visagra"></div>
+		<div class="visagra-8"></div>
 	</div>
 </body>
 <footer>
-  <script src="./index.js"></script>
+	<script src="./index.js"></script>
 </footer>
 </html>
