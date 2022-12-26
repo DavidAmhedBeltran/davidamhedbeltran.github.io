@@ -1,86 +1,152 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="También añado que no todos los enlaces/links/anclas están operativos asi que si quieren entrar a alguno y no se puede, es porque aún está en construcción y estoy utilizando enlaces muertos.">
-  <meta name="author" content="David Amhed Beltrán Rubín de Celis">
-  <link rel="stylesheet" href="/style/styles.css">
-  <title>Prácticas Innovacción</title>
-</head>
-<!-- El index
-El index de una pagina web hace referencia a la pagina principal o de inicio de todo sitio web, dentro de esta pagina principal debe contener elementos como:
-Logotipo – Indispensable para distinguir tu empresa, puede encontrarse en un banner principal o en alguna otra parte visible del index, el logo es la identificación de tu negocio! -->
-<body>
-  <!-- TIP:
-  Tu página web debe contener los colores de tu empresa, es decir aquellos que utilices en logotipo, papelería, documentación, etc.
-  Recordatorio:
-  Toda pagina web debe iniciar abriendo una etiqueta de html, seguida del titulo de la pagina y su encabezado. -->
-  <header>
-    <div class="header_container">
-      <h2 class="titulo">Amhedriel</h2>
-      <!-- Menu de navegación-El menu también es una parte primordial en una pagina web, en este peque;o tutorial estamos manejando un menu lineal con texto, sin animaciones en donde destacamos la navegación o hyper vínculos hacia otras secciones de esta pagina web.
-El menu de navegación llevara al cliente hacia otras areas de interés de tu empresa, como galería de fotos, servicios que ofreces y como contactarte. -->
-        <nav class="navigation">          
-          <ul class="nav">                 
-            <li><span><a href="index.html" class="home">HOME</a></span></li>
-            <li><span><a href="/HTML/index.html" class="html">HTML</a></span></li>
-            <li><span><a href="/CSS/index.html" class="css">CSS</a></span></li>
-            <li><span><a href="index.html" class="js">JavaScript</a></span></li>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="También añado que no todos los enlaces/links/anclas están operativos asi que si quieren entrar a alguno y no se puede, es porque aún está en construcción y estoy utilizando enlaces muertos.">
+    <meta name="author" content="David Amhed Beltrán Rubín de Celis">
+    <link rel="stylesheet" type="text/css" href="/style/styles-dist.css">
+    <title>Prácticas Innovacción</title>
+  </head>
+  <!-- El index
+  El index de una pagina web hace referencia a la pagina principal o de inicio de todo sitio web, dentro de esta pagina principal debe contener elementos como:
+  Logotipo – Indispensable para distinguir tu empresa, puede encontrarse en un banner principal o en alguna otra parte visible del index, el logo es la identificación de tu negocio! -->
+  <body>
+    <!-- TIP:
+    Tu página web debe contener los colores de tu empresa, es decir aquellos que utilices en logotipo, papelería, documentación, etc.
+    Recordatorio:
+    Toda pagina web debe iniciar abriendo una etiqueta de html, seguida del titulo de la pagina y su encabezado. -->
+    <header class="header">
+        <!-- Menu de navegación-El menu también es una parte primordial en una pagina web, en este peque;o tutorial estamos manejando un menu lineal con texto, sin animaciones en donde destacamos la navegación o hyper vínculos hacia otras secciones de esta pagina web.
+          El menu de navegación llevara al cliente hacia otras areas de interés de tu empresa, como galería de fotos, servicios que ofreces y como contactarte. -->
+          
+      <nav class="navigation">
+        <h2 class="logo">Amhedriel</h2>
+
+          <ul class="nav">
+
+              <li><a href="#" class="nav__item">HOME</a></li>
+
+              <li><a href="/HTML/index.html" class="nav__item nav__icon">HTML<img src="/media/arrow.svg" alt="" class="nav__arrow"></a>
+              
+                <ul class="nav__nesting">
+                  <li class="nav__inside">
+                    <a href="/HTML/requerimientos.html" target="_blank" class="nav__link nav__link--inside">Requerimientos </a>
+                  </li>
+                
+                
+                  <li class="nav__inside">
+                    <a href="/HTML/logo.html" target="_blank" class="nav__link nav__link--inside">Logo</a>
+                  </li>
+                
+                  <li class="nav__inside">
+                    <a href="/HTML/Media/Wireframe Practica 1.pdf" target="_blank" class="nav__link nav__link--inside">Wireframe</a>
+                  </li>
+                
+                  <li class="nav__inside">
+                    <a href="https://www.figma.com/file/krWi2ktG8I71dmAhHOmg8y/UI-Pasteleria?node-id=0%3A1" target="_blank" class="nav__link nav__link--inside">UI</a>
+                  </li>
+                
+                  <li class="nav__inside">
+                    <a href="https://davidamhedbeltran.github.io/HTML/pasteleria/homePasteleria.html" target="_blank" class="nav__link nav__link--inside">Maquetación (cliente)</a>
+                  </li>
+                
+                  <li class="nav__inside">
+                    <a href="http://localhost:8848/HTML/pasteleria/pastelero/menupastelero.html" target="_blank" class="nav__link nav__link--inside">Maquetación (pastelero)</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li><a href="#" class="nav__item nav__icon">CSS<img src="/media/arrow.svg" alt="" class="nav__arrow"></a>
+              
+
+                <ul class="nav__nesting">
+                  <li class="nav__inside">
+                    <a href="/CSS/index.html" target="_blank" class="nav__link">Landing Page</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="#" class="nav__item nav__icon">JavaScript<img src="/media/arrow.svg" alt="" class="nav__arrow"></a>
+
+                <ul class="nav__nesting">
+                  <li class="nav__inside">
+                    <a href="/JS/index.html" target="_blank" class="nav__link">Pokedex</a>
+                  </li>
+                </ul>
+              </li>
           </ul>
-        </nav>
-    </div>
-    <a href="#" class="logo"><img src="/media/aSuGusto.svg" alt="Construyendo" height="35%" width="35%"></a>
-  </header>
-  <main class="main">
-    <!-- Mensaje de bienvenida – Este texto deberá ser breve y en el se describirá tu empresa, la personalidad de la misma y a que se dedican.
-Redes sociales – Todavía hace algunos años, el incluir redes sociales no era parte importante de una pagina web, sin embargo HOY, estas redes son otro medio de contacto, opinion, y difusión de tu empresa, asi como un canal ideal para publicidad. -->
-      
-<!-- Banner: El banner principal de la pagina, puede contener también el logotipo, sin embargo te recomendamos que este sea cambiante, es decir que contenga, el producto mas importante, alguna promoción, o idea destacada. -->
-    <div class="container">
-      <h1>BIENVENIDOS</h1>
-      <h2>A MI PÁGINA WEB DE PRÁCTICAS</h2>
-      <p>No olvidar que "todas las personas que tuvieron éxito dieron su primer paso".</p>
+
+      </nav>
+    </header>
     
-      <p>Con esto quiero mencionar que esta página está en construcción pero lo publico de momento, sin embargo lo estoy actualizando constantemente.</p>
-      <p> Bienvenidos a todos aquellos que quieran dar un vistazo, un saludo también a usted querido Mission Commander, en esta página tengo los trabajos de prácticas que se piden para el curso actual para "Desarrollador Full Stack". Empecemos el vistazo con: </p>
-
-      <h2>HTML</h2>
-            
-      <p>Debido a que se dio un vistazo del principio de desarrollo, con nociones y herramientas de diseño entonces se puede empezar a generar el HTML de nuestros proyectos:</p>
-
-      <ul>
-        <li><a href="/HTML/index.html"><b>HTML</b></a></li>
-      </ul>
+    <main class="main">
       
-      <p>También añado que no todos los enlaces/links/anclas están operativos asi que si quieren entrar a alguno y no se puede es porque estoy utilizando enlaces muertos <code><a href="#"></a></code> que se utiliza para este tipo de casos.</p>
+      <section class="home">        
+        <!-- Mensaje de bienvenida – Este texto deberá ser breve y en el se describirá tu empresa, la personalidad de la misma y a que se dedican.
+          Redes sociales – Todavía hace algunos años, el incluir redes sociales no era parte importante de una pagina web, sin embargo HOY, estas redes son otro medio de contacto, opinion, y difusión de tu empresa, asi como un canal ideal para publicidad. -->
+          
+          <!-- Banner: El banner principal de la pagina, puede contener también el logotipo, sin embargo te recomendamos que este sea cambiante, es decir que contenga, el producto mas importante, alguna promoción, o idea destacada. -->
+        <div class="container__main">
+          <a href="#" class="logo"><img src="/media/aSuGusto.svg" alt="Construyendo" height="35%" width="35%"></a>
+          <h1 class="title">BIENVENIDOS</h1>
+          <h2>A MI PÁGINA WEB DE PRÁCTICAS</h2>
 
-      <p>Cada apartado se tratará en orden y respetando su enseñanza, por ejemplo en "HTML" sólo utilizaré <code>html</code> para realizar las prácticas.</p>
-    </div>
+          <p>No olvidar que "todas las personas que tuvieron éxito dieron su primer paso".</p>
+            
+          <p>Con esto quiero mencionar que esta página está en construcción pero lo publico de momento, sin embargo lo estoy actualizando constantemente.</p>
 
-    <div class="container">
-      <h2>CSS</h2>
-      <p>Se que es algo tarde pero se hizo lo mejor posible, espero que este algo cerca a las expectativas.</p>
-      <ul>
-        <li><a href="/CSS/index.html"><b>CSS</b></a></li>
-      </ul>
-      <p>Al igual que en el anterior ejercicio agrego que no todos los enlaces son funcionales por falta de tiempo que aún quiero entregar el de JavaScript y voy algo tarde.</p>
-    </div>
+          <p> Bienvenidos a todos aquellos que quieran dar un vistazo, un saludo también a usted querido Mission Commander, en esta página tengo los trabajos de prácticas que se piden para el curso actual para "Desarrollador Full Stack - Front-End". Empecemos el vistazo con: </p>
+        </div>
+      </section>
 
-    <div class="container">
-      <h2>JavaScript</h2>
-      <p>Pokedex hecho con HTML, CSS y JavaScript básico y vanilla.</p>
-      <ul>
-        <li><a href="/JS/index.html"><b>JavaScript</b></a></li>
-      </ul>
-      <p>Menciono que aún le faltan funcionalidades al Pokedex, pero como con los anteriores, me falta tiempo, sin embargo los iré actualizando con el tiempo.</p>
-    </div>
-  </main>
-  <footer class="footer">
-    <p>Autor: David Amhed Beltrán Rubín de Celis</p>
-    <p><a href="amhedriel@gmail.com">amhedriel@gmail.com</a></p>
-    <p><a href="#">Términos y condiciones</a></p>
-  </footer> 
-</body>
+      <section class="html">
+        <div>
+
+          <h2>HTML</h2>
+          
+          <p>Debido a que se dio un vistazo del principio de desarrollo, con nociones y herramientas de diseño entonces se puede empezar a generar el HTML de nuestros proyectos:</p>
+          
+          <ul>
+          <li><a href="/HTML/index.html"><b>HTML</b></a></li>
+          </ul>
+          
+          <p>También añado que no todos los enlaces/links/anclas están operativos asi que si quieren entrar a alguno y no se puede es porque estoy utilizando enlaces muertos <code><a href="#"></a></code> que se utiliza para este tipo de casos.</p>
+          
+          <p>Cada apartado se tratará en orden y respetando su enseñanza, por ejemplo en "HTML" sólo utilizaré <code>html</code> para realizar las prácticas.</p>
+        </div>
+      
+
+      </section>
+      <section class="css">
+
+        <div class="container">
+          <h2>CSS</h2>
+          <p>Se que es algo tarde pero se hizo lo mejor posible, espero que este algo cerca a las expectativas.</p>
+          <ul>
+            <li><a href="/CSS/index.html"><b>CSS</b></a></li>
+          </ul>
+          <p>Al igual que en el anterior ejercicio agrego que no todos los enlaces son funcionales por falta de tiempo que aún quiero entregar el de JavaScript y voy algo tarde.</p>
+        </div>
+      
+      </section>
+      <section class="js">
+        <div class="container">
+          <h2>JavaScript</h2>
+          <p>Pokedex hecho con HTML, CSS y JavaScript básico y vanilla.</p>
+          <ul>
+            <li><a href="/JS/index.html"><b>JavaScript</b></a></li>
+          </ul>
+          <p>Menciono que aún le faltan funcionalidades al Pokedex, pero como con los anteriores, me falta tiempo, sin embargo los iré actualizando con el tiempo.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Autor: David Amhed Beltrán Rubín de Celis</p>
+      <p><a href="amhedriel@gmail.com">amhedriel@gmail.com</a></p>
+      <p><a href="#">Términos y condiciones</a></p>
+      <script src="index.js"></script>
+    </footer> 
+  </body>
 </html>
